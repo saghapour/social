@@ -1,0 +1,10 @@
+syntax = "proto3";
+package instagram.model;
+import "google/protobuf/timestamp.proto";
+
+message InstagramRelationDTO {
+    string from_username = 1;
+    string to_username = 2;
+    string relation_type = 3;
+    google.protobuf.Timestamp created_at = 4;
+}

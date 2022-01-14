@@ -1,0 +1,17 @@
+main_db:
+  engine: 'mysql'
+  host: '10.10.1.1'
+  user: 'root'
+  port: 3306
+  password: '123'
+  db: 'test'
+mongo:
+  host: '10.10.14.2'
+  port: 27017
+  username: 'admin'
+  password: 'test'
+  db: 'test'
+  collection_mapping:
+    instagram_profile: instagram_profile
+    instagram_profile_history: instagram_profile_history
+    instagram_profile_relation: instagram_profile_relation

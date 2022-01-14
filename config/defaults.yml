@@ -1,0 +1,8 @@
+instagram:
+  username: test
+  password: test
+
+kafka:
+  schema_registry: 'http://my.local:8081'
+  bootstrap_servers: 'my.local:9092'
+

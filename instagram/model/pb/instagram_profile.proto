@@ -1,0 +1,21 @@
+syntax = "proto3";
+package instagram.model;
+import "google/protobuf/timestamp.proto";
+
+message InstagramProfileDTO {
+    uint64 _id = 1;
+    uint64 userid = 2;
+    string username =3;
+    string fullname = 4;
+    string biography = 5;
+    string external_url = 6;
+    string business_category_name = 7;
+    bool is_business_account = 8;
+    bool is_private = 9;
+//    string profile_pic_url = 9;
+    uint32 total_followers = 10;
+    uint32 total_followees = 11;
+    uint32 media_count = 12;
+    google.protobuf.Timestamp created_at = 13;
+    google.protobuf.Timestamp updated_at = 14;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package instagram.model;
+import "google/protobuf/timestamp.proto";
+
+message InstagramProfileHistoryDTO {
+    map<string, string> profile_spec = 1;
+    uint32 total_followers = 2;
+    uint32 total_followees = 3;
+    uint32 media_count = 4;
+    google.protobuf.Timestamp updated_at = 5;
+}
